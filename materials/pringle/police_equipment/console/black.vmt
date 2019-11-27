@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "pringle/police_equipment/console/black"
+	"$surfaceprop" "concrete"
+}

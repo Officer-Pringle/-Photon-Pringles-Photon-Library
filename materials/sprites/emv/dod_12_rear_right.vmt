@@ -1,0 +1,8 @@
+"UnLitGeneric"
+{
+	"$basetexture"		"sprites/emv/dod_12_rear_right"
+	"$nocull" 1
+	"$additive" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}

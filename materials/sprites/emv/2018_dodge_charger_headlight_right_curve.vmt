@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"sprites/emv/2018_dodge_charger_headlight_right_curve"
+	"$nocull" 1
+	"$additive" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}

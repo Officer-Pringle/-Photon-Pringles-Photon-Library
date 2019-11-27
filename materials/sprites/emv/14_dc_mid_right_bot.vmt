@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"sprites/emv/14_dc_mid_right_bot"
+	"$nocull" 1
+	"$additive" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}
