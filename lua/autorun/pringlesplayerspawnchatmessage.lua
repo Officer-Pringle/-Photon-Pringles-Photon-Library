@@ -1,39 +1,35 @@
-AddCSLuaFile()
+local settings = {
+	message = "Thank you for chosing Pringles' Creations.",
+	color = Color(255, 255, 255),
+	delay = 5
+}
 
-timer.Simple(5, function()
-	local chatmessage = "Thank You for Choosing Pringle Creations"
+if SERVER then
+	AddCSLuaFile()
+	util.AddNetworkString("PringlePhotonNotify")
 
-	function p_spawn(ply)
-		ply:ChatPrint(Color(255,0,0), chatmessage)
-	end
-end)
-hook.Add("PlayerInitialSpawn", "pcreationsnoti", p_spawn)
-
-
---[[
-local function p_spawn(ply)
-	
-	ply:ChatPrint(chatmessage)
-
+	hook.Add("PlayerInitialSpawn", "pcreationsnoti", function(ply)
+		timer.Simple(settings.delay, function()
+			if IsValid(ply) then
+				net.Start("PringlePhotonNotify")
+				net.Send(ply)
+			end
+		end)
+	end)
+else
+	net.Receive("PringlePhotonNotify", function(len, ply)
+		chat.AddText(settings.color, settings.message)
+	end)
 end
 
-hook.Add("PlayerInitialSpawn", "pcreationsnoti", p_spawn)
-
-timer.Simple(10, p_spawn)]]
-
-
-
---[[ NOTES ]]
 --[[
-	- Be able to color Chat message
-	- Have a Local Varible to edit Text when wanted
-	- Have a timer that takes 5-6 Seconds to active message after the player has spawned
+	Requirements:
+		- Editable color for chat.
+		- Editable var for text.
+		- Timer that takes like 5-6 seconds after player spawn.
 
-
-	- Sorry for my Code, i am not very Knowledged in Free Hand lua coding
-	- Thanks for anyone that helps
-
-
-
-	- Any Suggestions you have feel free to leave 
-]]
+	Notes:
+		- Sorry for my code, I am not very knowledgable in free hand lua coding.
+		- Thanks for anyone that helps.
+		- Any suggestions you have feel free to leave.
+]]--
