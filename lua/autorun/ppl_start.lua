@@ -1,6 +1,8 @@
 local settings = {
-	message = "Thank you for chosing Pringles' Creations.",
-	color = Color(255, 255, 255),
+	message1 = "[ Photon ] ",
+	message = " Thank you for chosing Pringles' Creations.",
+	color1 = Color(255, 0, 0),
+	color = Color(0, 255, 255),
 	delay = 5
 }
 
@@ -18,7 +20,7 @@ if SERVER then
 	end)
 else
 	net.Receive("PringlePhotonNotify", function(len, ply)
-		chat.AddText(settings.color, settings.message)
+		chat.AddText(settings.color1, settings.message1, settings.color, settings.message)
 	end)
 end
 
