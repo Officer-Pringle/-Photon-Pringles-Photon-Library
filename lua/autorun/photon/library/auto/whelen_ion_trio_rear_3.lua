@@ -34,7 +34,7 @@ COMPONENT.Meta = {
 		H = 6.2,
 		WMult = 1,
 		Sprite = "sprites/emv/whelen_ion",
-		Scale = 2.5,
+		Scale = 1.5,
 	},
 }
 
@@ -115,7 +115,7 @@ COMPONENT.Meta = {
 		H = 6.2,
 		WMult = 1,
 		Sprite = "sprites/emv/whelen_ion",
-		Scale = 2.5,
+		Scale = 1.5,
 	},
 }
 
