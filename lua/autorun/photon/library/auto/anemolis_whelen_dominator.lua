@@ -1,3 +1,9 @@
+--[[
+	Photon File For this was made by DatedGore, and was a pull request through the Github.
+
+	Phases A,B
+]]
+
 AddCSLuaFile()
 
 local A = "AMBER"
