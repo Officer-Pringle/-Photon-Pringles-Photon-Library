@@ -21,7 +21,7 @@ local name = "Whelen Dominator 2"
 local COMPONENT = {}
 
 COMPONENT.Model = "models/pringle/props/whelen dominator/dominator02.mdl"
-COMPONENT.Required = "489864412"
+COMPONENT.Required = "1917359476"
 COMPONENT.Skin = 0
 COMPONENT.Bodygroups = {}
 COMPONENT.Category = "Exterior"
