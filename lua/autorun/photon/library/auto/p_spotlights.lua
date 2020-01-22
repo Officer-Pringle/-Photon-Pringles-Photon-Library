@@ -114,7 +114,7 @@ COMPONENT.Meta = {
 		AngleOffset = 0,
 		W = 15.65,
 		H = 15.65,
-		WMult = 5,
+		WMult = 1,
 		Sprite = "sprites/emv/led_single",
 		Scale = 2,
 		NoLegacy = true,
@@ -128,7 +128,7 @@ COMPONENT.Positions = {
 	[1] = { 
 		Vector( -4.75, -3.75, 3.15),
 		Angle( 0, 90, 0 ), 
-		"auto_whelen_spotlight" },
+		"auto_whelen_spotlight", },
 
 }
 
