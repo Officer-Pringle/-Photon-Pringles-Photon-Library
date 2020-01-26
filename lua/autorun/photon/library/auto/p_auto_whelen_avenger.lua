@@ -43,12 +43,12 @@ COMPONENT.Positions = {
 	[1] = { 
 		Vector( -.6, 2.6, -.85 ), 
 		Angle( 0, -90, 0 ), 
-		"auto_whelen_avenger" 
+		"auto_whelen_avenger", 5 
 	},
 	[2] = {
 		Vector( -.6, -2.6, -.85 ), 
 		Angle( 0, -90, 0 ),
-		"auto_whelen_avenger"
+		"auto_whelen_avenger", 5
 	},
 	
 }
