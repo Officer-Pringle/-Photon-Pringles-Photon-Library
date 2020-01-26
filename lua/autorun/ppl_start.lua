@@ -1,6 +1,6 @@
 local settings = {
 	message1 = "[ Photon ] ",
-	message = " Thank you for chosing Pringles' Creations. One of the Leading Photon Creators",
+	message = " Thank you for chosing Pringles' Creations",
 	color1 = Color(255, 0, 0),
 	color = Color(0, 255, 255),
 	delay = 5
